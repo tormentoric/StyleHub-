@@ -6,6 +6,7 @@ export const products = [
     seller: "@fashionista_lisa",
     description: "A classic leather jacket in excellent condition. Perfect for a timeless, rugged look that elevates any outfit.",
     image: "https://images.pexels.com/photos/1124465/pexels-photo-1124465.jpeg?auto=compress&cs=tinysrgb&w=800",
+    video: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4",
     category: "Jackets",
     likes: 234,
     comments: 56,
@@ -13,7 +14,14 @@ export const products = [
     tags: ["vintage", "leather", "jacket", "fashion"],
     condition: "Excellent",
     size: "M",
-    brand: "Vintage Collection"
+    brand: "Vintage Collection",
+    views: 12500,
+    rating: 4.8,
+    reviews: 45,
+    inStock: true,
+    stockCount: 3,
+    shippingTime: "2-3 days",
+    returnPolicy: "30-day returns"
   },
   {
     id: 2,
@@ -22,6 +30,7 @@ export const products = [
     seller: "@urban_threads",
     description: "Cozy and warm, this handmade scarf is perfect for the winter season, crafted with premium, soft yarn.",
     image: "https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg?auto=compress&cs=tinysrgb&w=800",
+    video: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4",
     category: "Scarves",
     likes: 189,
     comments: 32,
@@ -29,7 +38,14 @@ export const products = [
     tags: ["handmade", "knit", "scarf", "winter"],
     condition: "New",
     size: "One Size",
-    brand: "Urban Threads"
+    brand: "Urban Threads",
+    views: 8900,
+    rating: 4.9,
+    reviews: 23,
+    inStock: true,
+    stockCount: 12,
+    shippingTime: "1-2 days",
+    returnPolicy: "14-day returns"
   },
   {
     id: 3,
@@ -54,6 +70,7 @@ export const products = [
     seller: "@street_style_sam",
     description: "Rare sneakers in mint condition. A must-have for any collector, featuring unique design details.",
     image: "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=800",
+    video: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_7mb.mp4",
     category: "Sneakers",
     likes: 456,
     comments: 102,
@@ -61,7 +78,14 @@ export const products = [
     tags: ["limited", "sneakers", "collector", "streetwear"],
     condition: "Mint",
     size: "10",
-    brand: "StreetStyle"
+    brand: "StreetStyle",
+    views: 28400,
+    rating: 4.9,
+    reviews: 156,
+    inStock: false,
+    stockCount: 0,
+    shippingTime: "Out of stock",
+    returnPolicy: "No returns on limited items"
   },
   {
     id: 5,
@@ -70,6 +94,7 @@ export const products = [
     seller: "@boho_vibes",
     description: "Flowing maxi dress with intricate patterns. Perfect for summer festivals and beach days.",
     image: "https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&w=800",
+    video: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4",
     category: "Dresses",
     likes: 278,
     comments: 45,
@@ -77,7 +102,14 @@ export const products = [
     tags: ["bohemian", "maxi", "dress", "summer"],
     condition: "Good",
     size: "S",
-    brand: "Boho Vibes"
+    brand: "Boho Vibes",
+    views: 9800,
+    rating: 4.6,
+    reviews: 34,
+    inStock: true,
+    stockCount: 5,
+    shippingTime: "2-4 days",
+    returnPolicy: "30-day returns"
   },
   {
     id: 6,
@@ -86,6 +118,7 @@ export const products = [
     seller: "@denim_dreams",
     description: "Timeless denim jacket that goes with everything. Slightly distressed for that perfect worn-in look.",
     image: "https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=800",
+    video: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4",
     category: "Jackets",
     likes: 195,
     comments: 28,
@@ -93,7 +126,14 @@ export const products = [
     tags: ["denim", "jacket", "classic", "versatile"],
     condition: "Good",
     size: "M",
-    brand: "Denim Dreams"
+    brand: "Denim Dreams",
+    views: 7200,
+    rating: 4.5,
+    reviews: 19,
+    inStock: true,
+    stockCount: 8,
+    shippingTime: "1-2 days",
+    returnPolicy: "30-day returns"
   }
 ]
 

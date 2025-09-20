@@ -19,11 +19,15 @@ class StyleHubApp {
 
   setupRoutes() {
     this.router.addRoute('/', () => import('./pages/Home.js').then(m => new m.HomePage()))
+    this.router.addRoute('/shopshots', () => import('./pages/Shopshots.js').then(m => new m.ShopshotsPage()))
     this.router.addRoute('/signup', () => import('./pages/SignUp.js').then(m => new m.SignUpPage()))
-    this.router.addRoute('/feed', () => import('./pages/Feed.js').then(m => new m.FeedPage()))
+    this.router.addRoute('/shop', () => import('./pages/Search.js').then(m => new m.SearchPage()))
     this.router.addRoute('/search', () => import('./pages/Search.js').then(m => new m.SearchPage()))
     this.router.addRoute('/messages', () => import('./pages/Messages.js').then(m => new m.MessagesPage()))
     this.router.addRoute('/product/:id', () => import('./pages/Product.js').then(m => new m.ProductPage()))
+    this.router.addRoute('/cart', () => import('./pages/Cart.js').then(m => new m.CartPage()))
+    this.router.addRoute('/profile', () => import('./pages/Profile.js').then(m => new m.ProfilePage()))
+    this.router.addRoute('/sell', () => import('./pages/Sell.js').then(m => new m.SellPage()))
   }
 
   setupEventListeners() {
