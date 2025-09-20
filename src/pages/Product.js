@@ -339,7 +339,7 @@ export class ProductPage {
         const count = likeBtn.textContent.match(/\d+/)[0]
         
         icon.textContent = this.product.isLiked ? 'favorite' : 'favorite_border'
-        icon.className = `material-symbols-outlined ${this.product.isLiked ? 'text-red-500' : ''}`
+        icon.className = \`material-symbols-outlined ${this.product.isLiked ? 'text-red-500' : ''}`
         
         likeBtn.innerHTML = `
           <span class="material-symbols-outlined ${this.product.isLiked ? 'text-red-500' : ''}">
@@ -350,4 +350,5 @@ export class ProductPage {
       })
     }
   }
+}
 }
