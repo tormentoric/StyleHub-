@@ -10,5 +10,8 @@
   },
   "devDependencies": {
     "vite": "^5.4.2"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.10"
   }
 }
