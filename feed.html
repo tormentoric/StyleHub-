@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#f46a25",
+            "background-light": "#f8f6f5",
+            "background-dark": "#1a1a1a",
+          },
+          fontFamily: {
+            display: ["Plus Jakarta Sans"],
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px"
+          },
+        },
+      },
+    };
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+    @layer utilities {
+      .snap-y-mandatory {
+        scroll-snap-type: y mandatory;
+      }
+      .snap-start {
+        scroll-snap-align: start;
+      }
+      .group:target .product-details {
+        transform: translateY(0);
+      }
+       .group:target .product-tag {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body class="bg-background-dark font-display text-background-light">
+<div class="relative flex h-screen w-full flex-col overflow-hidden">
+<header class="absolute top-0 z-20 flex w-full items-center justify-between whitespace-nowrap px-6 py-4 text-white">
+<div class="flex items-center gap-3 text-2xl font-bold">
+<span class="material-symbols-outlined text-3xl text-primary"> movie </span>
+<h2>Market Reels</h2>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-black/30 hover:bg-black/50">
+<span class="material-symbols-outlined"> search </span>
+</button>
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-black/30 hover:bg-black/50">
+<span class="material-symbols-outlined"> photo_camera </span>
+</button>
+</div>
+</header>
+<main class="h-full w-full snap-y-mandatory overflow-y-scroll">
+<div class="group relative h-screen w-full snap-start" id="reel-1">
+<video autoplay="" class="h-full w-full object-cover" loop="" muted="" poster="https://lh3.googleusercontent.com/aida-public/AB6AXuB4nv3Oxc6VrmPeVW8eoXt9MjWGLiZ82u6gHPCKWgZ3nvYQVI4qy3HNOBxbEilAkr2Nkq44H7rYmFFnc85SpL2JVgGQi5HBHR2Luu7SE_WbdnIUGpXGmfDeCWVLwCfui206R16w5C1ptaCRrVgWKse8zHvOnTs9yd8oHcHGRBGfIU1R4XnLT8v1qjHxCn3hi-9eAylhk4_7Vqrk-EPvt5_Azs2wSQ6jla9YLybpzvdCII2XMtjbJSH54RERn40oAC4J2yJz0yDtAbM">
+<source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4" type="video/mp4"/>
+</video>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-24 left-0 right-0 p-6 text-white">
+<div class="flex items-end">
+<div class="flex-1 space-y-2">
+<div class="flex items-center gap-3">
+<div class="h-10 w-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCY76By3Og6wYK6UevrzcvzUXyKbKDDteZk5aRhO5mDd8QPe_DKJtlvBB9lULH-DASCSvQQueh_JRDhYaFKmr2O4sk0TZ0q1xhWtdQESf6QOi4InzG-nUtJdYpvz7xK4YJYb2-MUrNAzeKT41WLwkWN702nxrqWA4A4xsigmy4bce_wFOqT3j6qQquE8ChCtzOGTS-IXDwp8pCEqT7XzjcUgb2P49hnUdgIL_D9fkrjFabLva4ytw6PDd6EPECZgLN-rlLt2EUa_v8");'></div>
+<p class="font-bold">@fashionista_lisa</p>
+</div>
+<h3 class="text-lg font-bold">Vintage Leather Jacket Demo</h3>
+<p class="text-sm text-white/80">
+                A classic leather jacket in excellent condition. See how it fits!
+              </p>
+</div>
+<div class="ml-4 flex flex-col items-center gap-4">
+<button class="flex flex-col items-center">
+<span class="material-symbols-outlined text-3xl"> favorite </span>
+<span class="text-xs">2.1k</span>
+</button>
+<button class="flex flex-col items-center">
+<span class="material-symbols-outlined text-3xl"> chat_bubble </span>
+<span class="text-xs">152</span>
+</button>
+<button class="flex flex-col items-center">
+<span class="material-symbols-outlined text-3xl"> share </span>
+<span class="text-xs">Share</span>
+</button>
+</div>
+</div>
+</div>
+<a class="product-tag absolute bottom-24 left-1/2 z-10 flex -translate-x-1/2 transform cursor-pointer flex-col items-center gap-1 text-white transition-opacity" href="#reel-1">
+<span class="material-symbols-outlined animate-bounce"> expand_less </span>
+<span class="text-xs font-bold">View Product</span>
+</a>
+<div class="product-details absolute bottom-0 left-0 right-0 z-20 h-full transform-gpu overflow-hidden bg-black/70 p-4 pt-12 text-white transition-transform duration-500 ease-in-out translate-y-full backdrop-blur-sm">
+<a class="absolute right-4 top-4 text-white" href="#">
+<span class="material-symbols-outlined"> close </span>
+</a>
+<div class="flex h-full flex-col">
+<div class="flex-shrink-0">
+<img alt="Leather Jacket" class="mb-4 h-48 w-full rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4nv3Oxc6VrmPeVW8eoXt9MjWGLiZ82u6gHPCKWgZ3nvYQVI4qy3HNOBxbEilAkr2Nkq44H7rYmFFnc85SpL2JVgGQi5HBHR2Luu7SE_WbdnIUGpXGmfDeCWVLwCfui206R16w5C1ptaCRrVgWKse8zHvOnTs9yd8oHcHGRBGfIU1R4XnLT8v1qjHxCn3hi-9eAylhk4_7Vqrk-EPvt5_Azs2wSQ6jla9YLybpzvdCII2XMtjbJSH54RERn40oAC4J2yJz0yDtAbM"/>
+<h3 class="text-2xl font-bold">Vintage Leather Jacket</h3>
+<p class="text-lg font-semibold text-primary">$120.00</p>
+<p class="mt-2 text-sm text-white/80">A classic leather jacket in excellent condition. Made from genuine leather, this jacket features a timeless design that never goes out of style. Perfect for any occasion.</p>
+</div>
+<div class="mt-auto flex-shrink-0">
+<button class="flex w-full items-center justify-center gap-2 rounded-lg bg-primary py-3 text-base font-bold text-white shadow-lg hover:bg-primary/90">
+<span class="material-symbols-outlined"> shopping_bag </span>
+                Add to Cart
+              </button>
+</div>
+</div>
+</div>
+</div>
+<div class="group relative h-screen w-full snap-start" id="reel-2">
+<video autoplay="" class="h-full w-full object-cover" loop="" muted="" poster="https://lh3.googleusercontent.com/aida-public/AB6AXuAUCwBQnE_-5XWKN2P9T9SHH8JGqszpFbi3sUo_gkWqD-ST4KRLc5l-Gbm8qGGytMyHqt5-kxVHFyP5JZnwfRPECwqi9GvDbi8sCdR-8LxjATnhSeG0CUBFhJKx7VeuV0rvkl20EeCIQm0joEwmaX_g6B_41ycr8W_eGjV7go1MAKNVjbLEGZKQ7XN-k_c4lZgSiUTQYIza7dQ3VL2mXMfrOuK9BU1kxX2976ux4pxx-SA7poxIWNKLbm_JXxZEmbQyHaovGkTzbVc">
+<source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4"/>
+</video>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-24 left-0 right-0 p-6 text-white">
+<div class="flex items-end">
+<div class="flex-1 space-y-2">
+<div class="flex items-center gap-3">
+<div class="h-10 w-10 rounded-full border-2 border-primary bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuByyudGEKDhUyCP3Pg8O7Fn6I6QmyxEcCtaZZXT9XsnKyRwARdUZuwbY9Hf2yz-Fqr19ERdIZXHPh3gpeRuy7efmLsDHl_2JPZjkau4bZVJKFZ-fEMpU_-vSlu4p8mnq3sB-8foLq906WpgCyDco06e5WV7So5VaXhPx23WT4aZNvxpUQqXt7Jj48I3CmjWeZNYKnL1Gtb5FUlQKlAFAJocm_hYlWHLzTrNB1uoO-YHzkr4dfn2wr0LPmtj60CyTGzc78FWahiGFFI");'></div>
+<p class="font-bold">@urban_threads</p>
+</div>
+<h3 class="text-lg font-bold">How to style our handmade knit scarf!</h3>
+<p class="text-sm text-white/80">
+                Cozy and warm, perfect for the winter season.
+              </p>
+</div>
+<div class="ml-4 flex flex-col items-center gap-4">
+<button class="flex flex-col items-center">
+<span class="material-symbols-outlined text-3xl"> favorite_border </span>
+<span class="text-xs">1.8k</span>
+</button>
+<button class="flex flex-col items-center">
+<span class="material-symbols-outlined text-3xl"> chat_bubble </span>
+<span class="text-xs">98</span>
+</button>
+<button class="flex flex-col items-center">
+<span class="material-symbols-outlined text-3xl"> share </span>
+<span class="text-xs">Share</span>
+</button>
+</div>
+</div>
+</div>
+<a class="product-tag absolute bottom-24 left-1/2 z-10 flex -translate-x-1/2 transform cursor-pointer flex-col items-center gap-1 text-white transition-opacity" href="#reel-2">
+<span class="material-symbols-outlined animate-bounce"> expand_less </span>
+<span class="text-xs font-bold">View Product</span>
+</a>
+<div class="product-details absolute bottom-0 left-0 right-0 z-20 h-full transform-gpu overflow-hidden bg-black/70 p-4 pt-12 text-white transition-transform duration-500 ease-in-out translate-y-full backdrop-blur-sm">
+<a class="absolute right-4 top-4 text-white" href="#">
+<span class="material-symbols-outlined"> close </span>
+</a>
+<div class="flex h-full flex-col">
+<div class="flex-shrink-0">
+<img alt="Handmade Knit Scarf" class="mb-4 h-48 w-full rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUCwBQnE_-5XWKN2P9T9SHH8JGqszpFbi3sUo_gkWqD-ST4KRLc5l-Gbm8qGGytMyHqt5-kxVHFyP5JZnwfRPECwqi9GvDbi8sCdR-8LxjATnhSeG0CUBFhJKx7VeuV0rvkl20EeCIQm0joEwmaX_g6B_41ycr8W_eGjV7go1MAKNVjbLEGZKQ7XN-k_c4lZgSiUTQYIza7dQ3VL2mXMfrOuK9BU1kxX2976ux4pxx-SA7poxIWNKLbm_JXxZEmbQyHaovGkTzbVc"/>
+<h3 class="text-2xl font-bold">Handmade Knit Scarf</h3>
+<p class="text-lg font-semibold text-primary">$45.00</p>
+<p class="mt-2 text-sm text-white/80">Cozy and warm, this handmade knit scarf is perfect for the winter season. Available in multiple colors.</p>
+</div>
+<div class="mt-auto flex-shrink-0">
+<button class="flex w-full items-center justify-center gap-2 rounded-lg bg-primary py-3 text-base font-bold text-white shadow-lg hover:bg-primary/90">
+<span class="material-symbols-outlined"> shopping_bag </span>
+                Add to Cart
+              </button>
+</div>
+</div>
+</div>
+</div>
+<div class="group relative h-screen w-full snap-start" id="reel-3">
+<video autoplay="" class="h-full w-full object-cover" loop="" muted="" poster="https://lh3.googleusercontent.com/aida-public/AB6AXuDcjQDWQCBmioL7NR_4XLEKvtPq6Omb-tJFxcQUpSHcyERwGTGa5yT7qLgMdwl0i3vOhe5fDa_ToJNHcd1OceBrkOxl_oHfH5PDXCO4beiFFE9w8A5ikCYv2Q10-xbQ4y3UQRpSefhSwvnpfIZ5FweeLFHM5sP9xMBGYbLDVD24VToPFAbueiQAMSYA-FLLSfonegxvN3VZdtpdX8sRKkPeKtyXNNJEUwSp6KurZFsTodOOffpgAj5n4YF6wBd_XJVauVpAWhVFjds">
+<source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4"/>
+</video>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-24 left-0 right-0 p-6 text-white">
+<div class="flex items-end">
+<div class="flex-1 space-y-2">
+<div class="flex items-center gap-3">
+<div class="h-10 w-10 rounded-full border-2 border-primary bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuByyudGEKDhUyCP3Pg8O7Fn6I6QmyxEcCtaZZXT9XsnKyRwARdUZuwbY9Hf2yz-Fqr19ERdIZXHPh3gpeRuy7efmLsDHl_2JPZjkau4bZVJKFZ-fEMpU_-vSlu4p8mnq3sB-8foLq906WpgCyDco06e5WV7So5VaXhPx23WT4aZNvxpUQqXt7Jj48I3CmjWeZNYKnL1Gtb5FUlQKlAFAJocm_hYlWHLzTrNB1uoO-YHzkr4dfn2wr0LPmtj60CyTGzc78FWahiGFFI");'></div>
+<p class="font-bold">@street_style_sam</p>
+</div>
+<h3 class="text-lg font-bold">Unboxing the Limited Edition Sneakers</h3>
+<p class="text-sm text-white/80">
+                Rare sneakers in mint condition. A must-have for any sneakerhead.
+              </p>
+</div>
+<div class="ml-4 flex flex-col items-center gap-4">
+<button class="flex flex-col items-center">
+<span class="material-symbols-outlined text-3xl"> favorite </span>
+<span class="text-xs">5.2k</span>
+</button>
+<button class="flex flex-col items-center">
+<span class="material-symbols-outlined text-3xl"> chat_bubble </span>
+<span class="text-xs">401</span>
+</button>
+<button class="flex flex-col items-center">
+<span class="material-symbols-outlined text-3xl"> share </span>
+<span class="text-xs">Share</span>
+</button>
+</div>
+</div>
+</div>
+<a class="product-tag absolute bottom-24 left-1/2 z-10 flex -translate-x-1/2 transform cursor-pointer flex-col items-center gap-1 text-white transition-opacity" href="#reel-3">
+<span class="material-symbols-outlined animate-bounce"> expand_less </span>
+<span class="text-xs font-bold">View Product</span>
+</a>
+<div class="product-details absolute bottom-0 left-0 right-0 z-20 h-full transform-gpu overflow-hidden bg-black/70 p-4 pt-12 text-white transition-transform duration-500 ease-in-out translate-y-full backdrop-blur-sm">
+<a class="absolute right-4 top-4 text-white" href="#">
+<span class="material-symbols-outlined"> close </span>
+</a>
+<div class="flex h-full flex-col">
+<div class="flex-shrink-0">
+<img alt="Limited Edition Sneakers" class="mb-4 h-48 w-full rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcjQDWQCBmioL7NR_4XLEKvtPq6Omb-tJFxcQUpSHcyERwGTGa5yT7qLgMdwl0i3vOhe5fDa_ToJNHcd1OceBrkOxl_oHfH5PDXCO4beiFFE9w8A5ikCYv2Q10-xbQ4y3UQRpSefhSwvnpfIZ5FweeLFHM5sP9xMBGYbLDVD24VToPFAbueiQAMSYA-FLLSfonegxvN3VZdtpdX8sRKkPeKtyXNNJEUwSp6KurZFsTodOOffpgAj5n4YF6wBd_XJVauVpAWhVFjds"/>
+<h3 class="text-2xl font-bold">Limited Edition Sneakers</h3>
+<p class="text-lg font-semibold text-primary">$250.00</p>
+<p class="mt-2 text-sm text-white/80">Rare sneakers in mint condition. A must-have for any sneakerhead. Only 100 pairs made.</p>
+</div>
+<div class="mt-auto flex-shrink-0">
+<button class="flex w-full items-center justify-center gap-2 rounded-lg bg-primary py-3 text-base font-bold text-white shadow-lg hover:bg-primary/90">
+<span class="material-symbols-outlined"> shopping_bag </span>
+                Add to Cart
+              </button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<nav class="absolute bottom-0 z-30 flex w-full items-center justify-around border-t border-white/10 bg-black/30 py-2 backdrop-blur-sm">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined"> home </span>
+<span class="text-xs font-bold">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-white/70 hover:text-white" href="#">
+<span class="material-symbols-outlined"> explore </span>
+<span class="text-xs font-medium">Explore</span>
+</a>
+<a class="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white shadow-lg" href="#">
+<span class="material-symbols-outlined text-3xl"> add </span>
+</a>
+<a class="flex flex-col items-center gap-1 text-white/70 hover:text-white" href="#">
+<span class="material-symbols-outlined"> shopping_bag </span>
+<span class="text-xs font-medium">Cart</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-white/70 hover:text-white" href="#">
+<div class="aspect-square w-6 rounded-full bg-cover bg-center bg-no-repeat ring-2 ring-white/70" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCY76By3Og6wYK6UevrzcvzUXyKbKDDteZk5aRhO5mDd8QPe_DKJtlvBB9lULH-DASCSvQQueh_JRDhYaFKmr2O4sk0TZ0q1xhWtdQESf6QOi4InzG-nUtJdYpvz7xK4YJYb2-MUrNAzeKT41WLwkWN702nxrqWA4A4xsigmy4bce_wFOqT3j6qQquE8ChCtzOGTS-IXDwp8pCEqT7XzjcUgb2P49hnUdgIL_D9fkrjFabLva4ytw6PDd6EPECZgLN-rlLt2EUa_v8");'></div>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</nav>
+</div>
+
+</body></html>

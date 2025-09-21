@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>StyleHub - User Shop</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#f46a25",
+              "background-light": "#f8f6f5",
+              "background-dark": "#221610",
+            },
+            fontFamily: {
+              display: ["Plus Jakarta Sans"],
+            },
+            borderRadius: { DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px" },
+          },
+        },
+      };
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-stone-900 dark:text-stone-100">
+<div class="flex min-h-screen">
+<aside class="w-64 shrink-0 border-r border-stone-200 dark:border-stone-800/50 p-6 hidden lg:flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-8">
+<div class="p-2 bg-primary rounded-lg">
+<svg class="text-white" fill="none" height="24" viewBox="0 0 48 48" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h1 class="text-xl font-bold">StyleHub</h1>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-stone-500 dark:text-stone-400 hover:bg-stone-200/60 dark:hover:bg-stone-800/60" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-medium">Home</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-stone-500 dark:text-stone-400 hover:bg-stone-200/60 dark:hover:bg-stone-800/60" href="#">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-medium">Explore</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-stone-500 dark:text-stone-400 hover:bg-stone-200/60 dark:hover:bg-stone-800/60" href="#">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="font-medium">Shop</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-stone-500 dark:text-stone-400 hover:bg-stone-200/60 dark:hover:bg-stone-800/60" href="#">
+<span class="material-symbols-outlined">chat_bubble</span>
+<span class="font-medium">Messages</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg bg-primary/10 dark:bg-primary/20 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-bold">Profile</span>
+</a>
+</nav>
+</div>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-stone-500 dark:text-stone-400 hover:bg-stone-200/60 dark:hover:bg-stone-800/60" href="#">
+<span class="material-symbols-outlined">add_circle</span>
+<span class="font-medium">Create</span>
+</a>
+</aside>
+<main class="flex-1">
+<header class="flex items-center justify-between p-4 border-b border-stone-200 dark:border-stone-800/50 sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex-1 max-w-xl">
+<label class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-stone-400 dark:text-stone-500">search</span>
+<input class="w-full pl-10 pr-4 py-2 rounded-full border border-stone-300 dark:border-stone-700 bg-stone-100 dark:bg-stone-900 focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Search" type="search"/>
+</label>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-stone-200/60 dark:hover:bg-stone-800/60 text-stone-500 dark:text-stone-400">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<button class="p-2 rounded-full hover:bg-stone-200/60 dark:hover:bg-stone-800/60 text-stone-500 dark:text-stone-400">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+<button>
+<img alt="User avatar" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF8gCh9lLEryumQhbFLw8OjU-WOQ97ys8uFgLRVwodgyMRgORqK-nhaShvT4zPrLx5Jxll1RjoUJ9yZ3BtBfgurnr1hztj7DYCObcSUIjqj25yez1Y2BEHmAcM37pCAyJJuwiqBxaxaEsslnUmoBylZ04kl9dnT4Lg9jZwhMg3G6n-9yb_Hbtx7xLDuWoE0uXAoxuA_EU1F0YrLUSYPFvXsUsqqwjZr1qAVgsmckUE_QxCciyKXgM8rbxrxyL9olrwKlPuykp-uUg"/>
+</button>
+</div>
+</header>
+<div class="p-6 md:p-8">
+<div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
+<img alt="Seller avatar" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover ring-4 ring-offset-4 ring-offset-background-light dark:ring-offset-background-dark ring-primary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc8yLl-pz0Hlhjqx__DGmY2K_sYemnhRaDTB7NbcrjHjVn1DWpm2dKk5ZQo4aF9anSGnslsa5woosT74yhdTN35VfSdj7DB2kT4e7fAb39t6kzZyByAtcHJHhmD9BN3cp1uc6KF_mGANa_wsnaLFhfAv-xOQQB57FgzndMhkSoEUPgljp6Aj_2l2RPXludAoyinZ61A-Z2H-0_6-0Ns-o9hfiqDdV-_8FWCgPl_nX9lojER631tt0ARJdR1zOYDJWtp_fwXMgPGww"/>
+<div class="text-center sm:text-left">
+<h2 class="text-3xl md:text-4xl font-bold">Olivia Carter</h2>
+<p class="text-stone-500 dark:text-stone-400 mt-1">@olivia.carter</p>
+<p class="text-stone-600 dark:text-stone-300 mt-2">100K followers · 200 following</p>
+<button class="mt-4 px-6 py-2 rounded-full bg-primary text-white font-bold transition-transform hover:scale-105">Follow</button>
+</div>
+</div>
+</div>
+<div class="px-6 md:px-8 border-b border-stone-200 dark:border-stone-800/50">
+<nav class="flex gap-8 -mb-px">
+<a class="py-3 px-1 border-b-2 border-primary text-primary font-bold" href="#">Shop</a>
+<a class="py-3 px-1 border-b-2 border-transparent text-stone-500 dark:text-stone-400 hover:text-primary hover:border-primary/50 font-medium" href="#">Shopshots</a>
+<a class="py-3 px-1 border-b-2 border-transparent text-stone-500 dark:text-stone-400 hover:text-primary hover:border-primary/50 font-medium" href="#">About</a>
+</nav>
+</div>
+<div class="p-6 md:p-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+<div class="group relative">
+<div class="aspect-square w-full overflow-hidden rounded">
+<img alt="Product image" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM92eQ15VaOdZmgt5KDoCIXLgtNLrPG_lVyJVjwPqdViU7z1xST_PBeW2kv8Fq1_ZnvengkYkh5K7QFFaWdvpo7SA944h_1SaPbp2vfH2GXgVUSaZNCZLE064rYkkXPSvYvMLNLUis-EO6_RLhnYSJPOd376kLvSVCD2UuGRPukt0JAco6zxQhi58D8iTIJsIJh2lORiJ2q5aa2Us4MFb4IUReVnase4rt_YAVXNXeABg9XEleylTYj6HnMEWTaU9kB036m5s8Rn4"/>
+</div>
+</div>
+<div class="group relative">
+<div class="aspect-square w-full overflow-hidden rounded">
+<img alt="Product image" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-2c-XjOHiMyP484wgVJCHwIlQRAYbTdt97VvgnwoXc6CCj1pQn2LEEIu-hR-h91Ghdx6t4Ru8GJq_0gdOOi2dHMVXLJhTo7NKe3sVOBMM87iNQb6yIC30Joy_--iMYY4lJ-FdiGa8bV5gTnMJ2FAbZGTuZjGowMRmi_FfHiLgQJh7kPzJvsC5ZTb1VaNEctZFgFWeJ_tTh7HSgOUtuszOZoWT1VlCGSlL7ZoM6VZTCuM6g2co8OfbbWegAbuxhdLMkjGMffjyn1k"/>
+</div>
+</div>
+<div class="group relative">
+<div class="aspect-square w-full overflow-hidden rounded">
+<img alt="Product image" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO9AnuxjSgVVA5fKic9vKBRsWRyPhWbTuHW5nLaYYC_MtmuW9TvtzQ54vv9n5ajJkFfys-dRytI46G68f4Sa3jIU58HutDLFn7p3oUIzMWzC4WTtfkEpa3ssVHnzFnihEYCUavUovBytg9hZ4MTVGyQzIfL9BzK4Bdza2GtdqQjzDvp-83uC7ESLmvRhYmlCOiwBXsLmU-Cj2FBe3ulpZ8l-QjvAjLnh9y1UmxykwHRJpZivHvDZHfFS_u5AGvRCn1jFbTmLJ3njQ"/>
+</div>
+</div>
+<div class="group relative">
+<div class="aspect-square w-full overflow-hidden rounded">
+<img alt="Product image" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbfY5tzjLxiX29HkGhHaxLQAwFN7dx1_42adbIC0b9h3s-YgcOi386rMxkQGsyvBYY2_7XZRdu8beYSIm6FT4aAfKWHBa2-bIBC-z5HjUmr0Jauts6uBvUbbx6akfj0DKSklQYn6onNOWyKGsGjmkpT8GapcQYgCDDGJX8_witYAInz6xH42b_3vah05nVp_Qjlmx1ZSrQ9jUSdvo-u5SKcs0auikhZFqPLgIBx1qujmlNRP86fYOgC0Vec_RrTI8lmCxV97KTKL4"/>
+</div>
+</div>
+<div class="group relative">
+<div class="aspect-square w-full overflow-hidden rounded">
+<img alt="Product image" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmaW8vxsHX2m9g5jLpxppIjSkGDMPk7guKb1KramvUWFG6-G8JZSQ8hGqrXjK1-oXE527_pjtfPSij1GCzoFSZgmUgZynDNf56UUqTif-4S6RJPmevngPlbJRobgA9ip6WQvyK2UBAvGnt7z_CXhTrsc6K_-fBnV8Hdn6rObTlrTmI6OuENNkmCaaG1j9W9msMMlBL6LhjS6aoXs3ZepRGSZGbh5yLz-ZsJzrfeiRRE6SM12Ud51BgvtaPj8bb5_2tMEpdyCXztnc"/>
+</div>
+</div>
+<div class="group relative">
+<div class="aspect-square w-full overflow-hidden rounded">
+<img alt="Product image" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5brHYztZUrsHywICQhypyiKBN1K37MxfWXYiNoeEvlxN3JkIs9y21N81lbZbbADM5qFX8FHYkm1USwYaLmDr2umbfNDx0ENgURPvyfEaNMwk2QxU1qNmRysqJzIVTzHq44r4uptkZLKbBQVQ6Ncy3oCtPTVzQBvnuaxuVfrEzFbOXCpGYn9XaLDW5rCerCqZ-pSkjWgUBMhVKsDwd6UfuFFu0XgE-6JXg5sg39IX9rZ6gzPWsZcXUdOm1XMrPw-Rz7hX4bKxc5Mc"/>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
